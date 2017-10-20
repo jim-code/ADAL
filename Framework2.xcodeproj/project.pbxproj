@@ -11,7 +11,26 @@
 		8E8ADF3E1E77770F00D719DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8ADF3D1E77770F00D719DB /* main.m */; };
 		8E8ADF401E77770F00D719DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8ADF3F1E77770F00D719DB /* Assets.xcassets */; };
 		8E8ADF431E77770F00D719DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8ADF411E77770F00D719DB /* MainMenu.xib */; };
+		8E8ADF4B1E77771900D719DB /* ADAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8ADF4A1E77771900D719DB /* ADAL.framework */; };
+		8E8ADF4D1E77775500D719DB /* ADAL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8ADF4A1E77771900D719DB /* ADAL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E8ADF511E77777F00D719DB /* MyWC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8ADF501E77777F00D719DB /* MyWC.m */; };
+		8E8ADF581E77791E00D719DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8ADF571E77791E00D719DB /* Security.framework */; };
+		8E8ADF5A1E77793F00D719DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8ADF591E77793F00D719DB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E8ADF4E1E77775500D719DB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8E8ADF4D1E77775500D719DB /* ADAL.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8E8ADF361E77770F00D719DB /* Framework2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framework2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +40,11 @@
 		8E8ADF3F1E77770F00D719DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E8ADF421E77770F00D719DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8E8ADF441E77770F00D719DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E8ADF4A1E77771900D719DB /* ADAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ADAL.framework; sourceTree = "<group>"; };
+		8E8ADF4F1E77777F00D719DB /* MyWC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWC.h; sourceTree = "<group>"; };
+		8E8ADF501E77777F00D719DB /* MyWC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWC.m; sourceTree = "<group>"; };
+		8E8ADF571E77791E00D719DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8E8ADF591E77793F00D719DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8ADF5A1E77793F00D719DB /* Cocoa.framework in Frameworks */,
+				8E8ADF581E77791E00D719DB /* Security.framework in Frameworks */,
+				8E8ADF4B1E77771900D719DB /* ADAL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,8 +64,10 @@
 		8E8ADF2D1E77770E00D719DB = {
 			isa = PBXGroup;
 			children = (
+				8E8ADF4A1E77771900D719DB /* ADAL.framework */,
 				8E8ADF381E77770F00D719DB /* Framework2 */,
 				8E8ADF371E77770F00D719DB /* Products */,
+				8E8ADF561E77791E00D719DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +84,8 @@
 			children = (
 				8E8ADF391E77770F00D719DB /* AppDelegate.h */,
 				8E8ADF3A1E77770F00D719DB /* AppDelegate.m */,
+				8E8ADF4F1E77777F00D719DB /* MyWC.h */,
+				8E8ADF501E77777F00D719DB /* MyWC.m */,
 				8E8ADF3F1E77770F00D719DB /* Assets.xcassets */,
 				8E8ADF411E77770F00D719DB /* MainMenu.xib */,
 				8E8ADF441E77770F00D719DB /* Info.plist */,
@@ -71,6 +102,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8E8ADF561E77791E00D719DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E8ADF591E77793F00D719DB /* Cocoa.framework */,
+				8E8ADF571E77791E00D719DB /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +121,7 @@
 				8E8ADF321E77770E00D719DB /* Sources */,
 				8E8ADF331E77770E00D719DB /* Frameworks */,
 				8E8ADF341E77770E00D719DB /* Resources */,
+				8E8ADF4E1E77775500D719DB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8ADF511E77777F00D719DB /* MyWC.m in Sources */,
 				8E8ADF3E1E77770F00D719DB /* main.m in Sources */,
 				8E8ADF3B1E77770F00D719DB /* AppDelegate.m in Sources */,
 			);
@@ -252,6 +294,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Framework2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ISB.Framework2;
@@ -264,6 +310,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Framework2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ISB.Framework2;

@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <ADAL/ADAL.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
